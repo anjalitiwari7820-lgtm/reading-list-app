@@ -9,6 +9,10 @@ class BookController extends Controller
 {
     public function index(Request $request)
     {
+        $totalBooks = Book::count();
+        $toReadBooks = Book::where('status', 'to-read')->count();
+        $readingBooks = Book::where('status', 'reading')->count();
+        $finishedBooks = Book::where('status', 'finished')->count();
         $query = Book::query();
 
         if ($request->filled('status')) {
@@ -26,7 +30,13 @@ class BookController extends Controller
 
 $books = $query->latest()->get();
 
-        return view('books.index', compact('books'));
+        return view('books.index', compact(
+    'books',
+    'totalBooks',
+    'toReadBooks',
+    'readingBooks',
+    'finishedBooks'
+));
     }
 
     public function create()

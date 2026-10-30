@@ -128,3 +128,36 @@ form {
     color: #56309a;
     font-size: 13px;
 }
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.dashboard-card {
+    background: #f1eaff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #d8c7ff;
+}
+
+.dashboard-card h3 {
+    color: #5b3a91;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #6c3fc5;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

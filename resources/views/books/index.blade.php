@@ -10,6 +10,27 @@
 <body>
     <div class="container">
     <h1>My Reading List</h1>
+    <div class="dashboard">
+    <div class="dashboard-card">
+        <h3>Total Books</h3>
+        <p>{{ $totalBooks }}</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>To Read</h3>
+        <p>{{ $toReadBooks }}</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Currently Reading</h3>
+        <p>{{ $readingBooks }}</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Finished</h3>
+        <p>{{ $finishedBooks }}</p>
+    </div>
+</div>
 
     <a href="{{ route('books.create') }}">+ Add New Book</a>
 
