@@ -184,3 +184,31 @@ form {
     background-color: #d9f5e3;
     color: #176b3a;
 }
+/* Mobile responsive improvements */
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+        padding: 15px;
+    }
+
+    .filter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-form input,
+    .filter-form select,
+    .filter-form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .book-card {
+        padding: 15px;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
