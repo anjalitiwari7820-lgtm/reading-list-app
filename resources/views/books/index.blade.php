@@ -88,7 +88,16 @@
 
                     <p>Author: {{ $book->author }}</p>
 
-                    <p>Status: {{ $book->status }}</p>
+                    <p>
+                        Status:
+                        @if ($book->status == 'to-read')
+                            To Read
+                        @elseif ($book->status == 'reading')
+                            Currently Reading
+                        @elseif ($book->status == 'finished')
+                            Finished
+                        @endif
+                    </p>
 
                     <a href="{{ route('books.edit', $book) }}">Edit</a>
 
