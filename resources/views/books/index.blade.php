@@ -75,6 +75,8 @@
 
         <h2>My Books</h2>
 
+        <p>Showing {{ $books->count() }} books</p>
+
         @if ($books->isEmpty())
 
             <p>No books found. Try changing your search or filter!</p>
