@@ -1,0 +1,130 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #f4f0ff;
+    color: #30264a;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(48, 38, 74, 0.1);
+}
+
+h1 {
+    color: #7041c4;
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+a {
+    color: #7041c4;
+    text-decoration: none;
+}
+
+button,
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #7041c4;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover,
+.button:hover {
+    background: #56309a;
+}
+
+input,
+select {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #d5c8ef;
+    border-radius: 8px;
+}
+
+.book-card {
+    margin-top: 16px;
+    padding: 18px;
+    border: 1px solid #e5dcf8;
+    border-radius: 12px;
+    background: #fcfaff;
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+form {
+    margin-bottom: 12px;
+}
+
+.error {
+    color: #b42318;
+}
+
+.success {
+    color: #18794e;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-form label {
+    font-weight: bold;
+}
+
+.book-form input,
+.book-form select {
+    width: 100%;
+    padding: 12px;
+}
+
+.book-form button {
+    margin-top: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #eee5ff;
+    color: #56309a;
+    font-size: 13px;
+}
