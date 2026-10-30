@@ -15,7 +15,16 @@ class BookController extends Controller
             $query->where('status', $request->status);
         }
 
-        $books = $query->latest()->get();
+        if ($request->filled('search')) {
+    $search = $request->search;
+
+    $query->where(function ($q) use ($search) {
+        $q->where('title', 'like', "%{$search}%")
+          ->orWhere('author', 'like', "%{$search}%");
+    });
+}
+
+$books = $query->latest()->get();
 
         return view('books.index', compact('books'));
     }

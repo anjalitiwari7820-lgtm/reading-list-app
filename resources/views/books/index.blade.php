@@ -29,6 +29,16 @@
 
     <button type="submit">Filter</button>
 </form>
+<form action="{{ route('books.index') }}" method="GET" class="filter-form">
+    <input
+        type="text"
+        name="search"
+        placeholder="Search by book title or author..."
+        value="{{ request('search') }}"
+    >
+
+    <button type="submit">Search</button>
+</form>
 
     <h2>My Books</h2>
 
