@@ -5,10 +5,16 @@ A simple Reading List web application built with Laravel and PHP. It helps users
 ## Features
 
 - View all books in the reading list.
-- Add a new book with its title, author, and reading status.
+- Add new books with title, author, and reading status.
 - Edit existing book details.
 - Delete books with a confirmation prompt.
+- Search books by title or author.
 - Filter books by reading status.
+- Dashboard showing total books and counts for each reading status.
+- Display the number of books matching the current search and filters.
+- Colourful status badges for easy identification.
+- Responsive layout for mobile screens.
+- Form validation to prevent invalid book entries.
 - Store book data using an SQLite database.
 - Simple, user-friendly interface with pastel purple styling.
 
@@ -20,6 +26,7 @@ A simple Reading List web application built with Laravel and PHP. It helps users
 - HTML
 - CSS
 - Blade Templates
+- Git and GitHub
 
 ## Reading Status Options
 
@@ -75,7 +82,7 @@ Install PHP, Composer, and the required PHP extensions for Laravel.
 
 ## AI Usage
 
-AI assistance was used to help understand Laravel concepts, troubleshoot errors, and develop parts of the application. The code was reviewed and tested during development.
+AI assistance was used to help understand Laravel concepts, troubleshoot errors, improve the application, and develop parts of the project. The code was reviewed and tested during development.
 
 ## License
 
