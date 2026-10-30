@@ -92,13 +92,15 @@
 
                     <p>
                         Status:
-                        @if ($book->status == 'to-read')
-                            To Read
-                        @elseif ($book->status == 'reading')
-                            Currently Reading
-                        @elseif ($book->status == 'finished')
-                            Finished
-                        @endif
+                        <span class="status-badge {{ $book->status }}">
+                            @if ($book->status == 'to-read')
+                                To Read
+                            @elseif ($book->status == 'reading')
+                                Currently Reading
+                            @elseif ($book->status == 'finished')
+                                Finished
+                            @endif
+                        </span>
                     </p>
 
                     <a href="{{ route('books.edit', $book) }}">Edit</a>
